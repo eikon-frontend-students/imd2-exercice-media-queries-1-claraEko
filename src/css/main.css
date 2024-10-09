@@ -16,3 +16,102 @@ img,
 video {
   display: block;
 }
+.description-title {
+  color: #000;
+  text-align: center;
+  font-family: "Hammersmith One";
+  font-size: 20px;
+  padding: 20px;
+  font-weight: 400;
+}
+.description-content {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.news-title {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.download-title {
+  color: #000;
+  text-align: center;
+  font-family: "Hammersmith One";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.download-content {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 5px;
+}
+.desktop {
+  display: none;
+}
+@media (min-width: 576px) {
+  .description-title {
+    font-size: 28px;
+  }
+  .description-content {
+    padding-bottom: 50px;
+  }
+  .logos {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+  .download-title {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 992px) {
+  .description-title {
+    font-size: 36px;
+    text-align: left;
+  }
+  .description-content {
+    font-size: 20px;
+    text-align: left;
+    padding-bottom: 50px;
+  }
+  .logos {
+    justify-content: left;
+    gap: 30px;
+    padding-bottom: 50px;
+  }
+  img {
+    width: 100px;
+  }
+  .download-title {
+    font-size: 36px;
+  }
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+}
